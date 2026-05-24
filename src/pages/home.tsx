@@ -1,6 +1,8 @@
 import { useEffect } from "react";
 
 import ScrollVideoSection from "../components/ScrollVideoSection";
+import Loader from "../components/Loader";
+
 import YoutubeSection from "../components/YoutubeSection";
 import SeedCompanySection from "../components/SeedCompanySection";
 import ScientistsSection from "../components/ScientistsSection";
@@ -22,7 +24,7 @@ function Home() {
   return (
     <div style={{ overflowX: "clip", fontFamily: "'DM Sans', sans-serif" }}>
       <style>{`#pbar { position: fixed; top: 0; left: 0; height: 2px; width: 0%; background: linear-gradient(90deg, #3d6b2f, #8cc63f); z-index: 1000; transition: width 60ms linear; }`}</style>
-      {/* <Loader /> */}
+      <Loader />
       <ScrollVideoSection />
       <SeedCompanySection />
       <YoutubeSection />
