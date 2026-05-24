@@ -205,7 +205,7 @@ import emailjs from "@emailjs/browser";
 // ✅ UPDATE THESE WITH YOUR REAL DETAILS
 const YOUR_WHATSAPP_NUMBER = "918000335209"; // Format: country code + number, no + or spaces
 const YOUR_PHONE_NUMBER = "+91 9106190971"; // Display format
-const YOUR_PHONE_TEL = "+919876543210"; // For tel: link
+const YOUR_PHONE_TEL = "+91 9106190971"; // For tel: link
 const YOUR_MAPS_QUERY = "Keshod"; // Your pin address
 
 export default function Contact() {
