@@ -2,8 +2,6 @@ import { useEffect, useState, useRef } from "react";
 import { useSearchParams } from "react-router-dom";
 import emailjs from "@emailjs/browser";
 
-const STORAGE_KEY = "beej_gatha_inventory";
-
 export default function Contact() {
   const formRef = useRef<HTMLFormElement>(null);
   const [searchParams] = useSearchParams();

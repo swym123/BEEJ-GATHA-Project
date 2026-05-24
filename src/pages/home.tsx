@@ -6,7 +6,6 @@ import SeedCompanySection from "../components/SeedCompanySection";
 import ScientistsSection from "../components/ScientistsSection";
 import MissionSection from "../components/MissionSection";
 import EnergySection from "../components/EnergySection";
-import Loader from "../components/Loader";
 
 function Home() {
   useEffect(() => {
