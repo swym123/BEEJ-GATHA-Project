@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const STORAGE_KEY = "beej_gatha_inventory";
+const STORAGE_KEY = import.meta.env.VITE_STORAGE_KEY as string;
 
 interface ProductItem {
     id: number;

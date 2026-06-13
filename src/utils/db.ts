@@ -1,7 +1,7 @@
 import { INITIAL_FALLBACK_PRODUCTS } from "../data/products";
 import type { ProductItem } from "../data/products";
 
-const STORAGE_KEY = "beej_gatha_inventory";
+const STORAGE_KEY = import.meta.env.VITE_STORAGE_KEY as string;
 
 export type { ProductItem };
 

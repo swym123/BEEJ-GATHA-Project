@@ -12,7 +12,7 @@ export default function WelcomeHero() {
           <h1>Beej Gatha</h1>
           <p className="wh-sub">हर खेत में हरियाली</p>
           <p className="wh-lead">A story written in soil. Where Indian science meets the farmer's hand — seed by seed, field by field.</p>
-          <a href="#scrub-stage" className="wh-cta">Begin the journey ↓</a>
+          <a href="/product" className="wh-cta">Begin the journey ↓</a>
         </div>
       </section>
     </>

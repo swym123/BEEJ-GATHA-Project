@@ -90,7 +90,7 @@ export default function Product() {
                         <span className="pd-cat-pill">{p.category}</span>
                         <span className="pd-code">{p.code}</span>
                       </div>
-                      <h2>{p.icon} {p.name}</h2>
+                      <h2>{p.name}</h2>
                       <p className="pd-card-desc">{p.desc}</p>
                       <div className="pd-card-action">
                         <span>View Details →</span>

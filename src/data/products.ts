@@ -4,7 +4,6 @@ export interface ProductItem {
   name: string;
   code: string;
   tag: string;
-  icon: string;
   img: string;
   yield: string;
   maturity: string;
@@ -21,10 +20,9 @@ export const INITIAL_FALLBACK_PRODUCTS: ProductItem[] = [
   {
     id: 1,
     category: "Oilseed",
-    name: "BG Groundnut Bold",
+    name: "Groundnut Bold",
     code: "BGN-101",
     tag: "High Yield",
-    icon: "🥜",
     img: "images/groundnut/main_groundnut.png",
     photos: [
       "/images/groundnut/main_groundnut.png",
@@ -43,10 +41,9 @@ export const INITIAL_FALLBACK_PRODUCTS: ProductItem[] = [
   {
     id: 2,
     category: "Pulse",
-    name: "BG Chana Bold",
+    name: "Chana Bold",
     code: "BGC-202",
     tag: "Drought Tolerant",
-    icon: "🫘",
     img: "/images/Chana/main_chana.jpeg",
     photos: [
       "/images/Chana/main_chana.jpeg",
@@ -65,10 +62,9 @@ export const INITIAL_FALLBACK_PRODUCTS: ProductItem[] = [
   {
     id: 3,
     category: "Oilseed",
-    name: "BG Mustard Bold",
+    name: "Mustard Bold",
     code: "BGM-303",
     tag: "Best Seller",
-    icon: "🌿",
     img: "/images/Mustard/main_mustard.png",
     photos: [
       "/images/Mustard/main_mustard.png",
@@ -87,10 +83,9 @@ export const INITIAL_FALLBACK_PRODUCTS: ProductItem[] = [
   {
     id: 4,
     category: "Spice",
-    name: "BG Jeera Super",
+    name: "Jeera Super",
     code: "BGJ-404",
     tag: "High Aroma",
-    icon: "🌿",
     img: "https://images.unsplash.com/photo-1596040033229-6e0b3d3f3f3f?w=600&q=80",
     yield: "8–12 q/ha",
     maturity: "110–120 days",
@@ -104,10 +99,9 @@ export const INITIAL_FALLBACK_PRODUCTS: ProductItem[] = [
   {
     id: 5,
     category: "Medicinal",
-    name: "BG Isabgul Gold",
+    name: "Isabgul Gold",
     code: "BGI-505",
     tag: "Export Quality",
-    icon: "🌾",
     img: "https://images.unsplash.com/photo-1584305574643-9c6c4a3a3b3b?w=600&q=80",
     yield: "10–14 q/ha",
     maturity: "130–140 days",
@@ -121,10 +115,9 @@ export const INITIAL_FALLBACK_PRODUCTS: ProductItem[] = [
   {
     id: 6,
     category: "Cereal",
-    name: "BG Maize Hybrid",
+    name: "Maize Hybrid",
     code: "BGMZ-606",
     tag: "High Yield",
-    icon: "🌽",
     img: "https://images.unsplash.com/photo-1604328698691-7f4b4c1d3f3f?w=600&q=80",
     yield: "45–55 q/ha",
     maturity: "95–105 days",
@@ -138,10 +131,9 @@ export const INITIAL_FALLBACK_PRODUCTS: ProductItem[] = [
   {
     id: 7,
     category: "Cereal",
-    name: "BG Bajra Hybrid",
+    name: "Bajra Hybrid",
     code: "BGBJ-707",
     tag: "Drought Tolerant",
-    icon: "🌾",
     img: "https://images.unsplash.com/photo-1622206154227-5c3e0c3f3f3f?w=600&q=80",
     yield: "22–28 q/ha",
     maturity: "75–85 days",
@@ -155,10 +147,9 @@ export const INITIAL_FALLBACK_PRODUCTS: ProductItem[] = [
   {
     id: 8,
     category: "Spice",
-    name: "BG Variyali Elite",
+    name: "Variyali Elite",
     code: "BGV-808",
     tag: "New",
-    icon: "🌿",
     img: "https://images.unsplash.com/photo-1615485290383-3f3b3f3f3f3f?w=600&q=80",
     yield: "12–16 q/ha",
     maturity: "120–130 days",
@@ -172,10 +163,9 @@ export const INITIAL_FALLBACK_PRODUCTS: ProductItem[] = [
   {
     id: 9,
     category: "Fiber",
-    name: "BG Cotton Hybrid",
+    name: "Cotton Hybrid",
     code: "BGCN-909",
     tag: "High Ginning",
-    icon: "☁️",
     img: "https://images.unsplash.com/photo-1587502536900-baf0c3d4e9e3?w=600&q=80",
     yield: "22–28 q/ha (lint)",
     maturity: "160–180 days",
@@ -189,10 +179,9 @@ export const INITIAL_FALLBACK_PRODUCTS: ProductItem[] = [
   {
     id: 10,
     category: "Oilseed",
-    name: "BG Soybean Pro",
+    name: "Soybean Pro",
     code: "BGS-1010",
     tag: "High Protein",
-    icon: "🫘",
     img: "https://images.unsplash.com/photo-1571842805412-97e6eb30c35a?w=600&q=80",
     yield: "28–35 q/ha",
     maturity: "90–100 days",
@@ -206,10 +195,9 @@ export const INITIAL_FALLBACK_PRODUCTS: ProductItem[] = [
   {
     id: 11,
     category: "Pulse",
-    name: "BG Tuver Hybrid",
+    name: "Tuver Hybrid",
     code: "BGT-1111",
     tag: "Wilt Resistant",
-    icon: "🫘",
     img: "https://images.unsplash.com/photo-1596040033229-6e0b3d3f3f3f?w=600&q=80",
     yield: "18–24 q/ha",
     maturity: "160–180 days",
@@ -223,10 +211,9 @@ export const INITIAL_FALLBACK_PRODUCTS: ProductItem[] = [
   {
     id: 12,
     category: "Cereal",
-    name: "BG Wheat Gold",
+    name: "Wheat Gold",
     code: "BGW-1212",
     tag: "Best Seller",
-    icon: "🌾",
     img: "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?w=600&q=80",
     yield: "52–60 q/ha",
     maturity: "115–125 days",
@@ -240,10 +227,9 @@ export const INITIAL_FALLBACK_PRODUCTS: ProductItem[] = [
   {
     id: 13,
     category: "Oilseed",
-    name: "BG Castor Hybrid",
+    name: "Castor Hybrid",
     code: "BGC-1313",
     tag: "High Oil",
-    icon: "🌰",
     img: "https://images.unsplash.com/photo-1600585154340-be6161a56a9c?w=600&q=80",
     yield: "18–24 q/ha",
     maturity: "160–180 days",
@@ -257,10 +243,9 @@ export const INITIAL_FALLBACK_PRODUCTS: ProductItem[] = [
   {
     id: 14,
     category: "Oilseed",
-    name: "BG Sesame Gold",
+    name: "Sesame Gold",
     code: "BGS-1414",
     tag: "Early Maturity",
-    icon: "🌾",
     img: "https://images.unsplash.com/photo-1597848212624-a19eb35e2651?w=600&q=80",
     yield: "10–14 q/ha",
     maturity: "80–90 days",
@@ -274,10 +259,9 @@ export const INITIAL_FALLBACK_PRODUCTS: ProductItem[] = [
   {
     id: 15,
     category: "Spice",
-    name: "BG Coriander Super",
+    name: "Coriander Super",
     code: "BGC-1515",
     tag: "Dual Purpose",
-    icon: "🌿",
     img: "https://images.unsplash.com/photo-1606913083845-8c2f2e3f3f3f?w=600&q=80",
     yield: "12–18 q/ha",
     maturity: "100–110 days",

@@ -29,9 +29,9 @@ export default function Footer() {
 
           <div>
             <h5>Reach Us</h5>
-            <a href="mailto:hello@beejgatha.com">hello@beejgatha.com</a>
-            <a href="tel:+911234567890">+91 12345 67890</a>
-            <p className="ft-addr">Pune, Maharashtra, India</p>
+            <a href={`mailto:${import.meta.env.VITE_BUSINESS_EMAIL}`}>{import.meta.env.VITE_BUSINESS_EMAIL}</a>
+            <a href={`tel:${import.meta.env.VITE_BUSINESS_PHONE_TEL}`}>{import.meta.env.VITE_BUSINESS_PHONE_DISPLAY}</a>
+            <p className="ft-addr">Keshod, Gujarat, India</p>
           </div>
 
           <div>
@@ -62,6 +62,6 @@ const css = `
 .ft h5 { font-size: .65rem; letter-spacing: .3em; text-transform: uppercase; color: #3d6b2f; margin: 0 0 1.2rem; }
 .ft a { display: block; color: #5a4f3e; text-decoration: none; font-size: .85rem; padding: .35rem 0; transition: color .25s; }
 .ft a:hover { color: #8cc63f; }
-.ft-addr { font-size: .8rem; color: #8c7e6a; margin-top: .5rem; }
+.ft-addr { font-size: .8rem; color: #8c7e6a; margin-top: .5rem; line-height: 1.4; }
 .ft-bot { max-width: 1200px; margin: 3rem auto 0; padding-top: 1.5rem; border-top: 1px solid #e8dcc8; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem; font-size: .7rem; letter-spacing: .15em; text-transform: uppercase; color: #8c7e6a; }
 `;

@@ -85,6 +85,14 @@ export default function Careers() {
             </div>
           </div>
         </section>
+      <section className="contact-sec">
+        <div className="careers-container">
+          <h2 className="contact-title">Contact Us</h2>
+          <p className="contact-email">Email: <a href="mailto:contact@beejgatha.com">contact@beejgatha.com</a></p>
+          <p className="contact-phone">Office No. Gujarat: 9805205293</p>
+          <p className="contact-phone">Office No. Rajasthan: 9772086003</p>
+        </div>
+      </section>
       </div>
     </>
   );
@@ -279,5 +287,28 @@ const css = `
 
 .animate-fade-in {
   animation: fadeIn 0.6s ease-out forwards;
+}
+.contact-sec {
+  padding: 4rem 1.5rem;
+  background: #fdfcf9;
+  text-align: center;
+}
+
+.contact-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  color: #0d1208;
+  margin-bottom: 1rem;
+}
+
+.contact-email a {
+  color: #3d6b2f;
+  text-decoration: underline;
+}
+
+.contact-phone {
+  font-size: 1rem;
+  color: #5a4f3e;
+  margin: 0.2rem 0;
 }
 `;

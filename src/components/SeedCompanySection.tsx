@@ -15,7 +15,7 @@ const CARDS_DATA = [
     desc: "Our agronomists hand-pick parent seeds from the best crop varieties — evaluating yield history, disease resistance, and regional adaptability before a single seed enters our lab.",
     stat: "1000+",
     statLabel: "varieties screened",
-    img: "https://i2.wp.com/www.africaspeaks4africa.net/wp-content/uploads/2018/11/seeds.jpg?w=800&ssl=1",
+    img: "https://www.taropumps.com/media/2538/type-of-seeds-2.jpg",
     mTitle1: "Choosing the",
     mTitle2: "Finest Seeds",
     mDesc: "Hand-picked varieties screened for yield, resistance, and regional adaptability.",
@@ -127,16 +127,16 @@ export default function SeedCompanySection() {
     const disposers: Array<() => void> = [];
 
     (async () => {
-      await loadScript("https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js");
-      await loadScript("https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js");
+      await loadScript(import.meta.env.VITE_GSAP_CDN as string);
+      await loadScript(import.meta.env.VITE_SCROLLTRIGGER_CDN as string);
       if (dead) return;
 
       const gsap: any = (window as any).gsap;
       const ScrollTrigger: any = (window as any).ScrollTrigger;
       gsap.registerPlugin(ScrollTrigger);
 
-      // Only run desktop engine on desktop
-      if (window.innerWidth <= 768) return;
+      // Only run desktop engine on true desktop (>1024px)
+      if (window.innerWidth <= 1024) return;
 
       const cards = cardRefs.current;
       const infos = infoRefs.current;
@@ -362,7 +362,7 @@ export default function SeedCompanySection() {
       const onResize = () => {
         if (resizeTimer) clearTimeout(resizeTimer);
         resizeTimer = setTimeout(() => {
-          if (window.innerWidth <= 768) return;
+          if (window.innerWidth <= 1024) return;
           init();
         }, 220);
       };
@@ -468,7 +468,7 @@ export default function SeedCompanySection() {
         </p>
         <div className="sc-after-grid">
           <div className="sc-after-stat"><strong>5</strong><span>Step Process</span></div>
-          <div className="sc-after-stat"><strong>200+</strong><span>Varieties</span></div>
+          <div className="sc-after-stat"><strong>20+</strong><span>Varieties</span></div>
           <div className="sc-after-stat"><strong>24hr</strong><span>Dispatch</span></div>
         </div>
       </div>
@@ -790,9 +790,9 @@ const CSS = `
 }
 
 /* ─────────────────────────────────────────
-   MOBILE
+   MOBILE / TABLET (up to 1024px)
 ───────────────────────────────────────── */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   #sc-hint, #sc-flash, #sc-progress { display: none; }
   #sc-spacer, #sc-stage, #sc-after { display: none; }
   #sc-mobile { display: block; background: var(--sc-bg); }
@@ -976,6 +976,55 @@ const CSS = `
   .sc-m-after-stat span {
     display: block; font-size: 9px; color: var(--sc-muted);
     letter-spacing: .12em; text-transform: uppercase;
+  }
+}
+
+/* ── Tablet refinements (769px – 1024px) ── */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .sc-m-hero {
+    padding: 7rem 3rem 4rem;
+  }
+  .sc-m-hero-title {
+    font-size: clamp(4rem, 8vw, 6rem);
+  }
+  .sc-m-hero-desc {
+    font-size: 15px;
+    max-width: 480px;
+  }
+  .sc-m-stack {
+    height: calc(5 * 52vh + 10vh);
+  }
+  .sc-m-item {
+    padding: 0 3rem 32px;
+  }
+  .sc-m-card {
+    flex-direction: row;
+    border-radius: 20px;
+  }
+  .sc-m-imgwrap {
+    width: 42%;
+    height: auto;
+    min-height: 220px;
+    max-height: none;
+    flex-shrink: 0;
+  }
+  .sc-m-body {
+    padding: 1.8rem 2rem;
+  }
+  .sc-m-title {
+    font-size: clamp(2.2rem, 4vw, 3.2rem);
+  }
+  .sc-m-desc {
+    font-size: 14px;
+  }
+  .sc-m-after {
+    padding: 6rem 3rem 5rem;
+  }
+  .sc-m-after h2 {
+    font-size: clamp(3.5rem, 7vw, 5.5rem);
+  }
+  .sc-m-after-grid {
+    max-width: 500px;
   }
 }
 `;

@@ -12,11 +12,20 @@ dist
 dist-ssr
 *.local
 
+# Environment variables — never commit real credentials
+.env
+.env.local
+.env.production
+
+# macOS metadata
+.DS_Store
+**/.DS_Store
+__MACOSX
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
 .idea
-.DS_Store
 *.suo
 *.ntvs*
 *.njsproj
