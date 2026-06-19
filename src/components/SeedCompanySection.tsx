@@ -91,6 +91,7 @@ const DEPTHS = [0.018, 0.025, 0.015, 0.022, 0.02];
 
 function loadScript(src: string): Promise<void> {
   return new Promise((resolve, reject) => {
+    if (!src) return reject(new Error("Script source is undefined"));
     const existing = document.querySelector(`script[src="${src}"]`);
     if (existing) {
       if ((window as any).gsap && src.includes("gsap.min")) { resolve(); return; }
@@ -127,8 +128,8 @@ export default function SeedCompanySection() {
     const disposers: Array<() => void> = [];
 
     (async () => {
-      await loadScript(import.meta.env.VITE_GSAP_CDN as string);
-      await loadScript(import.meta.env.VITE_SCROLLTRIGGER_CDN as string);
+      await loadScript((import.meta.env.VITE_GSAP_CDN as string) || "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js");
+      await loadScript((import.meta.env.VITE_SCROLLTRIGGER_CDN as string) || "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js");
       if (dead) return;
 
       const gsap: any = (window as any).gsap;

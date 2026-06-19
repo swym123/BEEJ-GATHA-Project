@@ -89,7 +89,7 @@ export default function ProductDetail() {
 
       <main className="pd-root">
 
-        {/* Back button — floating elegantly over top left */}
+        {/* Back button — floating elegantly over top left on desktop, inline on mobile */}
         <button className="pd-back-btn" onClick={() => navigate("/product")}>
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" style={{ marginRight: 8 }}>
             <path d="M19 12H5M12 19l-7-7 7-7" />
@@ -222,6 +222,7 @@ const styles = `
     font-weight: 600;
     cursor: pointer;
     transition: all 0.2s ease;
+    white-space: nowrap;
   }
   .pd-back-btn:hover {
     background: #3d6b2f;
@@ -348,6 +349,7 @@ const styles = `
     display: flex;
     align-items: center;
     gap: 0.85rem;
+    flex-wrap: wrap;
   }
 
   .pd-category {
@@ -378,6 +380,7 @@ const styles = `
     line-height: 1.1;
     color: #0c1007;
     margin: 0;
+    word-break: break-word;
   }
 
   /* Catalog identifiers typography metrics */
@@ -404,6 +407,7 @@ const styles = `
   .pd-enquire-btn {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     gap: 0.85rem;
     padding: 1.25rem 3.2rem; /* Expanded button canvas sizing */
     background: #3d6b2f;
@@ -425,8 +429,11 @@ const styles = `
     transform: translateY(0);
   }
 
-  /* ── Responsive adjustments for handheld layouts ── */
+  /* ── Responsive adjustments for tablet / smaller desktop layouts ── */
   @media (max-width: 1024px) {
+    .pd-root {
+      padding: 5.5rem 2.5rem 3rem;
+    }
     .pd-split-container {
       gap: 3rem;
     }
@@ -434,41 +441,96 @@ const styles = `
     .pd-image-side { height: 500px; }
   }
 
+  /* ── Responsive adjustments for handheld / mobile layouts ── */
   @media (max-width: 840px) {
     .pd-root {
-      padding: 7rem 2rem 4rem 2rem;
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: flex-start;
+      /* extra top padding clears the fixed/sticky navbar */
+      padding: calc(70px + 1.25rem) 1.25rem 3rem;
+      min-height: auto;
+      box-sizing: border-box;
+      overflow-x: hidden;
     }
 
     .pd-back-btn {
       position: relative;
       top: 0;
       left: 0;
-      margin-bottom: 1.5rem;
+      margin-bottom: 1.25rem;
       align-self: flex-start;
+      padding: 0.55rem 1.1rem;
+      font-size: 0.82rem;
+      z-index: 1;
     }
 
     .pd-split-container {
       flex-direction: column;
       align-items: center;
-      gap: 2.5rem;
+      width: 100%;
+      max-width: 100%;
+      gap: 2rem;
+      box-sizing: border-box;
     }
 
     .pd-image-side {
       width: 100%;
+      max-width: 100%;
       flex: none;
-      height: 48vh;
-      min-height: 340px;
+      height: 50vh;
+      min-height: 280px;
+      border-radius: 16px;
+      box-sizing: border-box;
     }
 
     .pd-info-side {
       width: 100%;
+      max-width: 100%;
       flex: none;
     }
 
     .pd-info-content {
       max-width: 100%;
+      width: 100%;
+      gap: 1.1rem;
+      box-sizing: border-box;
     }
-    
-    .pd-title { font-size: 2.8rem; }
+
+    .pd-title { font-size: 2.2rem; }
+
+    .pd-code { font-size: 1rem; }
+
+    .pd-enquire-btn {
+      width: 100%;
+      max-width: 100%;
+      padding: 1rem 1.5rem;
+      font-size: 1rem;
+      box-sizing: border-box;
+    }
+
+    .pd-arrow {
+      width: 42px;
+      height: 42px;
+    }
+
+    .pd-arrow--left  { left: 0.75rem; }
+    .pd-arrow--right { right: 0.75rem; }
+  }
+
+  /* ── Extra small phones ── */
+  @media (max-width: 400px) {
+    .pd-root {
+      padding: 1rem 1rem 2.5rem;
+    }
+    .pd-title { font-size: 1.75rem; }
+    .pd-back-btn {
+      font-size: 0.78rem;
+      padding: 0.5rem 0.95rem;
+    }
+    .pd-image-side {
+      height: 42vh;
+      min-height: 230px;
+    }
   }
 `;

@@ -86,7 +86,12 @@ export const INITIAL_FALLBACK_PRODUCTS: ProductItem[] = [
     name: "Jeera Super",
     code: "BGJ-404",
     tag: "High Aroma",
-    img: "https://images.unsplash.com/photo-1596040033229-6e0b3d3f3f3f?w=600&q=80",
+    img: "https://i.ebayimg.com/images/g/iwQAAOSwQn5gCpKX/s-l1200.jpg",
+    photos: [
+      "/images/Jeera/main_jeera.jpg",
+      "/images/Jeera/jeera2.jpg",
+      "/images/Jeera/jeera3.jpg"
+    ],
     yield: "8–12 q/ha",
     maturity: "110–120 days",
     resistance: "Wilt, Blight",
@@ -102,7 +107,12 @@ export const INITIAL_FALLBACK_PRODUCTS: ProductItem[] = [
     name: "Isabgul Gold",
     code: "BGI-505",
     tag: "Export Quality",
-    img: "https://images.unsplash.com/photo-1584305574643-9c6c4a3a3b3b?w=600&q=80",
+    img: "https://thewholesaler.in/cdn/shop/products/Edible-Isabgol-Seeds-Psyllium-Seeds-Isab-Gol-Beej-Plantago-ovata-TheWholesalerCo-35839324_460x@2x.jpg?v=1755872822",
+    photos: [
+      "https://drvaidji.com/cdn/shop/articles/Psyllium-Husk-in-Hindi-2.jpg?v=1701515716",
+      "/images/Isabgul/isabgul2.jpg",
+      "https://5.imimg.com/data5/SELLER/Default/2023/4/302270762/IS/YG/TZ/186212602/psyllium-seeds-1000x1000.jpg"
+    ],
     yield: "10–14 q/ha",
     maturity: "130–140 days",
     resistance: "Powdery Mildew, Downy Mildew",
@@ -118,7 +128,12 @@ export const INITIAL_FALLBACK_PRODUCTS: ProductItem[] = [
     name: "Maize Hybrid",
     code: "BGMZ-606",
     tag: "High Yield",
-    img: "https://images.unsplash.com/photo-1604328698691-7f4b4c1d3f3f?w=600&q=80",
+    img: "https://t4.ftcdn.net/jpg/04/20/45/65/360_F_420456561_nnqiDUYF07WZqD5NvxMArEfQeDhuhD9K.jpg",
+    photos: [
+      "/images/Maize/main_maize.jpg",
+      "/images/Maize/maize2.jpg",
+      "/images/Maize/maize3.jpg"
+    ],
     yield: "45–55 q/ha",
     maturity: "95–105 days",
     resistance: "Fall Armyworm, Downy Mildew",
@@ -134,7 +149,12 @@ export const INITIAL_FALLBACK_PRODUCTS: ProductItem[] = [
     name: "Bajra Hybrid",
     code: "BGBJ-707",
     tag: "Drought Tolerant",
-    img: "https://images.unsplash.com/photo-1622206154227-5c3e0c3f3f3f?w=600&q=80",
+    img: "https://5.imimg.com/data5/SELLER/Default/2023/6/313160794/OF/GT/TP/5742893/pearl-millet-500x500.png",
+    photos: [
+      "/images/Bajra/main_bajra.jpg",
+      "/images/Bajra/bajra2.jpg",
+      "/images/Bajra/bajra3.jpg"
+    ],
     yield: "22–28 q/ha",
     maturity: "75–85 days",
     resistance: "Downy Mildew, Blast",
@@ -150,7 +170,12 @@ export const INITIAL_FALLBACK_PRODUCTS: ProductItem[] = [
     name: "Variyali Elite",
     code: "BGV-808",
     tag: "New",
-    img: "https://images.unsplash.com/photo-1615485290383-3f3b3f3f3f3f?w=600&q=80",
+    img: "https://i0.wp.com/www.hemvini.com/wp-content/uploads/2019/04/fennel-seed-sauf-500x500.jpg",
+    photos: [
+      "/images/Variyali/main_variyali.jpg",
+      "/images/Variyali/variyali2.jpg",
+      "/images/Variyali/variyali3.jpg"
+    ],
     yield: "12–16 q/ha",
     maturity: "120–130 days",
     resistance: "Aphids, Wilt",
@@ -166,7 +191,12 @@ export const INITIAL_FALLBACK_PRODUCTS: ProductItem[] = [
     name: "Cotton Hybrid",
     code: "BGCN-909",
     tag: "High Ginning",
-    img: "https://images.unsplash.com/photo-1587502536900-baf0c3d4e9e3?w=600&q=80",
+    img: "https://5.imimg.com/data5/SELLER/Default/2021/3/BY/MJ/GF/5506448/research-hybrid-cotton-seeds-500x500.jpg",
+    photos: [
+      "/images/Cotton/main_cotton.jpg",
+      "/images/Cotton/cotton2.jpg",
+      "/images/Cotton/cotton3.jpg"
+    ],
     yield: "22–28 q/ha (lint)",
     maturity: "160–180 days",
     resistance: "Bollworm, Wilt",
@@ -182,7 +212,12 @@ export const INITIAL_FALLBACK_PRODUCTS: ProductItem[] = [
     name: "Soybean Pro",
     code: "BGS-1010",
     tag: "High Protein",
-    img: "https://images.unsplash.com/photo-1571842805412-97e6eb30c35a?w=600&q=80",
+    img: "https://t3.ftcdn.net/jpg/00/89/92/00/240_F_89920061_k6q0i31oQhWQ2xIj6MFcNJeW2kWVBCHm.jpg",
+    photos: [
+      "/images/Soybean/main_soybean.jpg",
+      "/images/Soybean/soybean2.jpg",
+      "/images/Soybean/soybean3.jpg"
+    ],
     yield: "28–35 q/ha",
     maturity: "90–100 days",
     resistance: "Yellow Mosaic Virus, Rust",
@@ -198,7 +233,12 @@ export const INITIAL_FALLBACK_PRODUCTS: ProductItem[] = [
     name: "Tuver Hybrid",
     code: "BGT-1111",
     tag: "Wilt Resistant",
-    img: "https://images.unsplash.com/photo-1596040033229-6e0b3d3f3f3f?w=600&q=80",
+    img: "https://5.imimg.com/data5/SELLER/Default/2023/3/292224509/SR/BJ/JU/2899929/tuvar-seeds.png",
+    photos: [
+      "/images/Tuver/main_tuver.jpg",
+      "/images/Tuver/tuver2.jpg",
+      "/images/Tuver/tuver3.jpg"
+    ],
     yield: "18–24 q/ha",
     maturity: "160–180 days",
     resistance: "Fusarium Wilt, Sterility Mosaic",
@@ -214,7 +254,12 @@ export const INITIAL_FALLBACK_PRODUCTS: ProductItem[] = [
     name: "Wheat Gold",
     code: "BGW-1212",
     tag: "Best Seller",
-    img: "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?w=600&q=80",
+    img: "https://2.wlimg.com/product_images/bc-small/2025/7/14761425/a-grade-wheat-seed-1753334799-8222807.jpeg",
+    photos: [
+      "/images/Wheat/main_wheat.jpg",
+      "/images/Wheat/wheat2.jpg",
+      "/images/Wheat/wheat3.jpg"
+    ],
     yield: "52–60 q/ha",
     maturity: "115–125 days",
     resistance: "Rust, Blight",
@@ -230,7 +275,12 @@ export const INITIAL_FALLBACK_PRODUCTS: ProductItem[] = [
     name: "Castor Hybrid",
     code: "BGC-1313",
     tag: "High Oil",
-    img: "https://images.unsplash.com/photo-1600585154340-be6161a56a9c?w=600&q=80",
+    img: "https://tiimg.tistatic.com/fp/1/004/850/high-grade-castor-seeds-443.jpg",
+    photos: [
+      "/images/Castor/main_castor.jpg",
+      "/images/Castor/castor2.jpg",
+      "/images/Castor/castor3.jpg"
+    ],
     yield: "18–24 q/ha",
     maturity: "160–180 days",
     resistance: "Wilt, Root Rot",
@@ -246,7 +296,12 @@ export const INITIAL_FALLBACK_PRODUCTS: ProductItem[] = [
     name: "Sesame Gold",
     code: "BGS-1414",
     tag: "Early Maturity",
-    img: "https://images.unsplash.com/photo-1597848212624-a19eb35e2651?w=600&q=80",
+    img: "https://plus.unsplash.com/premium_photo-1674654419404-667fcdd0fe13?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c2VzYW1lJTIwc2VlZHN8ZW58MHx8MHx8fDA%3D",
+    photos: [
+      "/images/Sesame/main_sesame.jpg",
+      "/images/Sesame/sesame2.jpg",
+      "/images/Sesame/sesame3.jpg"
+    ],
     yield: "10–14 q/ha",
     maturity: "80–90 days",
     resistance: "Leaf Spot, Powdery Mildew",
@@ -262,7 +317,12 @@ export const INITIAL_FALLBACK_PRODUCTS: ProductItem[] = [
     name: "Coriander Super",
     code: "BGC-1515",
     tag: "Dual Purpose",
-    img: "https://images.unsplash.com/photo-1606913083845-8c2f2e3f3f3f?w=600&q=80",
+    img: "https://satopradhan.com/cdn/shop/products/dhania-sabut-coriander-seeds-100g-natural-and-purely-organic-without-adulteration-satopradhan-1-13351675691158.jpg?v=1696574793",
+    photos: [
+      "/images/Coriander/main_coriander.jpg",
+      "/images/Coriander/coriander2.jpg",
+      "/images/Coriander/coriander3.jpg"
+    ],
     yield: "12–18 q/ha",
     maturity: "100–110 days",
     resistance: "Aphids, Wilt",

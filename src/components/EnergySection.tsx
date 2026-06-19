@@ -2,6 +2,7 @@ import { useEffect } from "react";
 
 function loadScript(src: string): Promise<void> {
   return new Promise((resolve, reject) => {
+    if (!src) return reject(new Error("Script source is undefined"));
     if (src.includes("gsap.min") && (window as any).gsap) return resolve();
     if (src.includes("ScrollTrigger") && (window as any).ScrollTrigger) return resolve();
 
@@ -31,8 +32,8 @@ export default function EnergySection() {
     let cancelled = false;
     let kill: (() => void) | undefined;
     (async () => {
-      await loadScript(import.meta.env.VITE_GSAP_CDN as string);
-      await loadScript(import.meta.env.VITE_SCROLLTRIGGER_CDN as string);
+      await loadScript((import.meta.env.VITE_GSAP_CDN as string) || "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js");
+      await loadScript((import.meta.env.VITE_SCROLLTRIGGER_CDN as string) || "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js");
       if (cancelled) return;
       const gsap = (window as any).gsap;
       const ScrollTrigger = (window as any).ScrollTrigger;
