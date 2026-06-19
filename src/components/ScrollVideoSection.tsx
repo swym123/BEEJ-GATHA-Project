@@ -1149,7 +1149,7 @@ const css = `
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 160px;
+  width: 120px;
   height: 110px;
   z-index: 6;
   pointer-events: none;
