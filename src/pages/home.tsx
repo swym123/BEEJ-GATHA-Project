@@ -8,6 +8,7 @@ import SeedCompanySection from "../components/SeedCompanySection";
 import ScientistsSection from "../components/ScientistsSection";
 import MissionSection from "../components/MissionSection";
 import EnergySection from "../components/EnergySection";
+import HomeProductSection from "../components/homeproduct";
 
 function Home() {
   useEffect(() => {
@@ -27,6 +28,7 @@ function Home() {
       <Loader />
       <ScrollVideoSection />
       <SeedCompanySection />
+      <HomeProductSection />
       <YoutubeSection />
       <ScientistsSection />
       <MissionSection />
