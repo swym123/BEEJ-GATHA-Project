@@ -97,6 +97,7 @@ export default function ProductDetail() {
           Back to Catalog
         </button>
 
+
         {/* ── Center Two-Column Split Layout Wrapper ── */}
         <div className="pd-split-container">
 
