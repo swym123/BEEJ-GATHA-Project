@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import logo from "../assets/beej-gatha-logo.png";
-import seedVideo from "../assets/seed.mp4";
+import seedVideo from "../assets/Seed_grows_to_plant_video_202607121334.mp4";
 
 const CHAPTERS: [number, number, string, string][] = [
   [0.0, 0.25, "The Seed", "Dormant · Patient · Ready"],

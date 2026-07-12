@@ -12,20 +12,6 @@ export default function Careers() {
       location: "Pune, Maharashtra",
       type: "Full-Time",
       description: "Lead marker-assisted selection programs for drought and salt tolerance in oilseed/mustard crops. Ph.D. in Genetics/Plant Breeding required."
-    },
-    {
-      title: "Regional Agronomy Manager",
-      department: "Field Operations",
-      location: "Indore, Madhya Pradesh",
-      type: "Full-Time",
-      description: "Manage farm demonstration trials and supervise a team of district agronomists. Requires 5+ years of extension service experience."
-    },
-    {
-      title: "Quality Assurance Specialist",
-      department: "Seed Lab & Quality Control",
-      location: "Aurangabad, Maharashtra",
-      type: "Full-Time",
-      description: "Oversee moisture, physical purity, and germination testing parameters. Maintain ISTA and national certification documentation."
     }
   ];
 
@@ -68,7 +54,7 @@ export default function Careers() {
         <section className="openings-sec">
           <div className="careers-container">
             <h2 className="openings-title">Current Open Positions</h2>
-            
+
             <div className="jobs-list">
               {jobs.map((j, i) => (
                 <div key={i} className="job-card">
@@ -85,14 +71,14 @@ export default function Careers() {
             </div>
           </div>
         </section>
-      <section className="contact-sec">
-        <div className="careers-container">
-          <h2 className="contact-title">Contact Us</h2>
-          <p className="contact-email">Email: <a href="mailto:contact@beejgatha.com">contact@beejgatha.com</a></p>
-          <p className="contact-phone">Office No. Gujarat: 9805205293</p>
-          <p className="contact-phone">Office No. Rajasthan: 9772086003</p>
-        </div>
-      </section>
+        <section className="contact-sec">
+          <div className="careers-container">
+            <h2 className="contact-title">Contact Us</h2>
+            <p className="contact-email">Email: <a href="mailto:contact@beejgatha.com">contact@beejgatha.com</a></p>
+            <p className="contact-phone">Office No. Gujarat: 9805205293</p>
+            <p className="contact-phone">Office No. Rajasthan: 9772086003</p>
+          </div>
+        </section>
       </div>
     </>
   );
@@ -127,6 +113,7 @@ const css = `
   font-size: clamp(2.5rem, 6vw, 4.5rem);
   margin: 0 0 1rem;
   line-height: 1.1;
+  color: #f5f0e8;
 }
 
 .careers-sub {

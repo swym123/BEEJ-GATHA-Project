@@ -111,7 +111,7 @@ const css = `
 .pd-page { font-family: 'DM Sans', sans-serif; color: #0d1208; background: #fdfcf9; }
 .pd-hero { position: relative; background: linear-gradient(160deg, #0d1208 0%, #1a2a14 100%); color: #f5f0e8; padding: 10rem 1.5rem 6rem; text-align: center; }
 .pd-eyebrow { font-size: .75rem; letter-spacing: .4em; text-transform: uppercase; color: #8cc63f; margin: 0 0 1rem; }
-.pd-hero h1 { font-family: 'Playfair Display', serif; font-weight: 400; font-size: clamp(2.5rem, 6vw, 4.5rem); margin: 0 0 1rem; line-height: 1.1; }
+.pd-hero h1 { font-family: 'Playfair Display', serif; font-weight: 400; font-size: clamp(2.5rem, 6vw, 4.5rem); margin: 0 0 1rem; line-height: 1.1; color: #f5f0e8; }
 .pd-sub { font-size: clamp(1rem, 2vw, 1.25rem); color: rgba(245, 240, 232, 0.7); max-width: 600px; margin: 0 auto; line-height: 1.6; }
 .pd-container { max-width: 1200px; margin: 0 auto; }
 .pd-toolbar-sec { padding: 3rem 1.5rem 0; }

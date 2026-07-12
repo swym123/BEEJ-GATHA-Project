@@ -85,6 +85,7 @@ const css = `
   font-size: clamp(2.5rem, 6vw, 4.5rem);
   margin: 0 0 1rem;
   line-height: 1.1;
+  color: #f5f0e8;
 }
 
 .mission-sub {
