@@ -1,9 +1,11 @@
+import './ScientistsSection.css'
+
 export default function ScientistsSection() {
   const scientists = [
     {
       name: "Dr. M. S. Swaminathan",
       role: "Father of Indian Green Revolution",
-      img: "https://adyartimes.in/wp-content/uploads/2023/09/2-tribute-MSS.jpeg",
+      img: "https://mlpyskbirng6.i.optimole.com/cb:qf7c.e96c/w:372/h:418/q:mauto/g:sm/f:best/https://www.iwmi.org/wp-content/uploads/2023/10/MS-Swaminathan-2.jpg",
       desc: "Revolutionized Indian agriculture through high-yield crop varieties and sustainable farming practices."
     },
     {
@@ -28,7 +30,7 @@ export default function ScientistsSection() {
 
   return (
     <>
-      <style>{css}</style>
+
       <section className="sci-sec">
         <div className="sci-head">
           <p className="sci-eyebrow">Vision in Motion</p>
@@ -66,143 +68,3 @@ export default function ScientistsSection() {
   );
 }
 
-const css = `
-.sci-sec { 
-  background: #0e140d !important; 
-  color: #ffffff !important; 
-  padding: clamp(5rem, 10vw, 8rem) clamp(1.5rem, 5vw, 4rem); 
-  font-family: 'DM Sans', sans-serif; 
-}
-
-.sci-sec h2, .sci-sec h3, .sci-sec h4 { 
-  color: #ffffff !important; 
-}
-
-.sci-head { 
-  max-width: 950px; 
-  margin: 0 auto clamp(3rem, 6vw, 4.5rem); 
-  text-align: center; 
-}
-
-.sci-eyebrow { 
-  font-size: 11px !important; 
-  letter-spacing: 0.4em !important; 
-  text-transform: uppercase; 
-  color: #527845 !important; 
-  margin: 0 0 2.2rem !important; 
-  font-weight: 500;
-}
-
-.sci-head h2 { 
-  font-family: 'Playfair Display', serif; 
-  font-weight: 400; 
-  font-size: clamp(2.8rem, 6.5vw, 5.2rem); 
-  line-height: 1.15; 
-  margin: 0 0 2rem; 
-  letter-spacing: -0.01em;
-}
-
-.sci-head h2 em, .sci-lab h3 em {
-  font-style: italic;
-  color: #89bd65 !important;
-}
-
-.sci-lead { 
-  font-size: clamp(1rem, 1.6vw, 1.35rem) !important; 
-  line-height: 1.7; 
-  color: rgba(255, 255, 255, 0.65) !important; 
-  margin: 0 auto;
-  font-weight: 300;
-  max-width: 800px;
-}
-
-.sci-grid { 
-  display: grid; 
-  grid-template-columns: repeat(4, 1fr); 
-  gap: 1.5rem; 
-  max-width: 1200px; 
-  margin: 0 auto 5rem; 
-}
-
-@media (max-width: 880px) { .sci-grid { grid-template-columns: repeat(2, 1fr); } }
-@media (max-width: 480px) { .sci-grid { grid-template-columns: 1fr; } }
-
-.sci-card { 
-  background: #151e13; 
-  border-radius: 4px; 
-  overflow: hidden; 
-  box-shadow: 0 4px 24px rgba(0,0,0,.3); 
-}
-
-.sci-card img { 
-  width: 100%; 
-  height: 240px; 
-  object-fit: cover; 
-}
-
-.sci-meta { 
-  padding: 1.3rem 1.2rem; 
-  border-top: 3px solid #527845; 
-}
-
-.sci-meta h4 { 
-  font-family: 'Playfair Display', serif; 
-  font-weight: 400; 
-  font-size: 1.2rem; 
-  margin: 0 0 .5rem; 
-}
-
-.sci-meta p { 
-  font-size: .75rem !important; 
-  letter-spacing: .1em; 
-  text-transform: uppercase; 
-  color: rgba(255, 255, 255, 0.5) !important; 
-  margin: 0; 
-}
-
-.sci-lab { 
-  display: grid; 
-  grid-template-columns: 1fr 1fr; 
-  gap: 3rem; 
-  align-items: center; 
-  max-width: 1200px; 
-  margin: 0 auto; 
-}
-
-@media (max-width: 760px) { .sci-lab { grid-template-columns: 1fr; } }
-
-.sci-lab h3 { 
-  font-family: 'Playfair Display', serif; 
-  font-weight: 400; 
-  line-height: 1.25; /* 👈 Add this line here */
-  font-size: clamp(2rem, 4vw, 3rem); 
-  margin: 0 0 2.5rem; 
-}
-
-.sci-lab-desc { 
-  font-size: clamp(0.95rem, 1.4vw, 1.1rem) !important; 
-  line-height: 1.8; 
-  color: rgba(255, 255, 255, 0.65) !important; 
-  margin: 0 0 1.5rem; 
-}
-
-.sci-lab ul { 
-  list-style: none; 
-  padding: 0; 
-  margin: 0 0 2rem 0; 
-}
-
-.sci-lab li { 
-  padding: .6rem 0; 
-  border-bottom: 1px solid rgba(255,255,255,.1); 
-  color: #89bd65 !important; 
-  font-size: .95rem; 
-}
-
-.sci-lab img { 
-  width: 100%; 
-  height: 480px; 
-  object-fit: cover; 
-  border-radius: 4px; 
-}
-`;

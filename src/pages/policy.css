@@ -1,0 +1,110 @@
+.policy-page {
+    font-family: 'DM Sans', sans-serif;
+    color: #0d1208;
+    background: #fdfcf9;
+}
+
+.policy-hero {
+    position: relative;
+    background: linear-gradient(160deg, #0d1208 0%, #1a2a14 100%);
+    color: #f5f0e8;
+    padding: 10rem 1.5rem 6rem;
+    text-align: center;
+}
+
+.policy-eyebrow {
+    font-size: .75rem;
+    letter-spacing: .4em;
+    text-transform: uppercase;
+    color: #8cc63f;
+    margin: 0 0 1rem;
+}
+
+.policy-hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    margin: 0 0 1rem;
+    line-height: 1.1;
+}
+
+.policy-sub {
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    color: rgba(245, 240, 232, 0.7);
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.policy-content-sec {
+    padding: 5rem 1.5rem;
+}
+
+.policy-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.policy-card {
+    background: #fff;
+    border: 1px solid #e8dcc8;
+    border-radius: 8px;
+    padding: 3rem 4rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.01);
+}
+
+@media (max-width: 640px) {
+    .policy-card {
+        padding: 2rem;
+    }
+}
+
+.policy-card h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    margin: 2.5rem 0 1rem;
+    color: #0d1208;
+}
+
+.policy-card h2:first-child {
+    margin-top: 0;
+}
+
+.policy-card p {
+    font-size: 0.95rem;
+    line-height: 1.8;
+    color: #5a4f3e;
+    margin: 0 0 1.5rem;
+}
+
+.policy-card ul {
+    padding-left: 1.5rem;
+    margin: 0 0 1.5rem;
+}
+
+.policy-card li {
+    font-size: 0.95rem;
+    line-height: 1.8;
+    color: #5a4f3e;
+    margin-bottom: 0.5rem;
+}
+
+.policy-card strong {
+    color: #3d6b2f;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+}

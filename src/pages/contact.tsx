@@ -1,6 +1,7 @@
 import { useEffect, useState, useRef } from "react";
 import { useSearchParams } from "react-router-dom";
 import emailjs from "@emailjs/browser";
+import './contact.css'
 
 const YOUR_WHATSAPP_NUMBER = import.meta.env.VITE_WHATSAPP_NUMBER as string;
 const YOUR_PHONE_TEL = import.meta.env.VITE_PHONE_TEL as string;
@@ -62,7 +63,7 @@ export default function Contact() {
 
   return (
     <>
-      <style>{css}</style>
+
       <div className="contact-page animate-fade-in">
         <section className="contact-hero">
           <div className="contact-hero-inner">
@@ -214,63 +215,3 @@ export default function Contact() {
   );
 }
 
-const css = `
-.contact-page { font-family: 'DM Sans', sans-serif; color: #0d1208; background: #fdfcf9; }
-.contact-hero { position: relative; background: linear-gradient(160deg, #0d1208 0%, #1a2a14 100%); color: #f5f0e8; padding: 10rem 1.5rem 6rem; text-align: center; }
-.contact-eyebrow { font-size: .75rem; letter-spacing: .4em; text-transform: uppercase; color: #8cc63f; margin: 0 0 1rem; }
-.contact-hero h1 { font-family: 'Playfair Display', serif; font-weight: 400; font-size: clamp(2.5rem, 6vw, 4.5rem); margin: 0 0 1rem; line-height: 1.1; }
-.contact-sub { font-size: clamp(1rem, 2vw, 1.25rem); color: rgba(245, 240, 232, 0.7); max-width: 600px; margin: 0 auto; line-height: 1.6; }
-
-/* ✅ Quick Contact Bar */
-.quick-contact-bar { background: #fff; border-bottom: 1px solid #e8dcc8; padding: 1.5rem; }
-.quick-contact-grid { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
-@media (max-width: 700px) { .quick-contact-grid { grid-template-columns: 1fr; } }
-
-.quick-btn { display: flex; align-items: center; gap: 1rem; padding: 1rem 1.25rem; border: 1.5px solid #e8dcc8; border-radius: 8px; background: #fdfcf9; cursor: pointer; transition: all 0.2s ease; text-align: left; width: 100%; }
-.quick-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.08); }
-
-.quick-btn-icon { width: 46px; height: 46px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
-.quick-btn-text { display: flex; flex-direction: column; gap: 2px; }
-.quick-btn-label { font-size: 0.9rem; font-weight: 700; color: #0d1208; }
-.quick-btn-sub { font-size: 0.78rem; color: #7a6e5f; }
-
-/* WhatsApp */
-.whatsapp-btn { border-color: #25D366; }
-.whatsapp-btn:hover { background: #f0fff6; border-color: #25D366; }
-.whatsapp-btn .quick-btn-icon { background: #25D366; color: #fff; }
-.whatsapp-btn .quick-btn-label { color: #128C7E; }
-
-/* Call */
-.call-btn { border-color: #3d6b2f; }
-.call-btn:hover { background: #f4f9f0; border-color: #3d6b2f; }
-.call-btn .quick-btn-icon { background: #3d6b2f; color: #fff; }
-.call-btn .quick-btn-label { color: #3d6b2f; }
-
-/* Body */
-.contact-body { padding: 5rem 1.5rem; }
-.contact-container { max-width: 1100px; margin: 0 auto; }
-.contact-grid { display: grid; grid-template-columns: 1.5fr 1fr; gap: 4rem; }
-@media (max-width: 860px) { .contact-grid { grid-template-columns: 1fr; gap: 3rem; } }
-
-.contact-form-card { background: #fff; border: 1px solid #e8dcc8; border-radius: 8px; padding: 3rem; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.01); }
-@media (max-width: 480px) { .contact-form-card { padding: 1.5rem; } }
-.contact-form-card h2 { font-family: 'Playfair Display', serif; font-size: 1.8rem; margin: 0 0 2rem; color: #0d1208; }
-.form-group { display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 1.5rem; }
-.form-group-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
-@media (max-width: 600px) { .form-group-row { grid-template-columns: 1fr; gap: 0; } }
-.form-group label { font-size: 0.8rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; color: #3d6b2f; }
-.form-group input, .form-group textarea { font-family: 'DM Sans', sans-serif; font-size: 0.95rem; padding: 0.8rem 1rem; border: 1px solid #e8dcc8; border-radius: 4px; background: #fdfcf9; outline: none; transition: border-color 0.2s, box-shadow 0.2s; color: #0d1208; }
-.form-group input:focus, .form-group textarea:focus { border-color: #8cc63f; box-shadow: 0 0 0 3px rgba(140, 198, 63, 0.15); }
-.form-submit-btn { font-family: 'DM Sans', sans-serif; background: #3d6b2f; color: #fff; border: none; border-radius: 4px; padding: 1rem 2rem; font-size: 0.85rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; cursor: pointer; transition: background-color 0.2s, transform 0.2s; width: 100%; }
-.form-submit-btn:hover { background: #8cc63f; color: #0d1208; }
-.form-submit-btn:active { transform: scale(0.98); }
-
-.contact-info-panel { display: flex; flex-direction: column; gap: 2.5rem; }
-.info-section h2 { font-family: 'Playfair Display', serif; font-size: 1.4rem; margin: 0 0 1rem; color: #0d1208; border-bottom: 2px solid #8cc63f; display: inline-block; padding-bottom: 0.3rem; }
-.info-section p { font-size: 0.95rem; line-height: 1.7; color: #5a4f3e; margin: 0; }
-.info-section a { color: #3d6b2f; text-decoration: none; font-weight: 500; }
-.info-section a:hover { color: #8cc63f; }
-
-.animate-fade-in { animation: fadeIn 0.6s ease-out forwards; }
-@keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
-`;

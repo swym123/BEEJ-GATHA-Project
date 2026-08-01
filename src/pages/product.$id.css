@@ -1,0 +1,399 @@
+.pd-root {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 8rem 4rem 6rem;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+    background: #f5f0e8;
+}
+
+/* Upper corner navigation button */
+.pd-back-btn {
+    position: absolute;
+    top: 5.5rem;
+    left: 4.5rem;
+    z-index: 10;
+    display: inline-flex;
+    align-items: center;
+    padding: 0.65rem 1.3rem;
+    background: rgba(15, 23, 42, 0.06);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 100px;
+    color: #0c1007;
+    font-size: 0.88rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+}
+
+.pd-back-btn:hover {
+    background: #3d6b2f;
+    border-color: #3d6b2f;
+    color: #fff;
+}
+
+/* Two Column Row Split Layout Container (Sized-up profile width) */
+.pd-split-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* Ensures exact layout mid-level height leveling */
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1240px;
+    /* Enhanced wide workspace spread */
+    gap: 5rem;
+    /* Larger empty zone split divider */
+}
+
+/* ── Left Side Image Profile (Upscaled sizing window) ── */
+.pd-image-side {
+    position: relative;
+    flex: 0 0 50%;
+    /* Holds steady exactly at half layout span width */
+    width: 50%;
+    height: 620px;
+    /* Upgraded viewport box display size */
+    overflow: hidden;
+    background: #0d1109;
+    border-radius: 24px;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.1);
+}
+
+.pd-slider-track {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.7s cubic-bezier(0.25, 1, 0.2, 1);
+}
+
+.pd-slide {
+    flex: 0 0 100%;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Control buttons viewport frame overlays */
+.pd-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.2, 1, 0.2, 1);
+}
+
+.pd-arrow:hover {
+    background: #fff;
+    color: #0d1109;
+    border-color: #fff;
+    transform: translateY(-50%) scale(1.06);
+}
+
+.pd-arrow--left {
+    left: 1.5rem;
+}
+
+.pd-arrow--right {
+    right: 1.5rem;
+}
+
+/* Frame slide indicator pagination wrapper */
+.pd-dots {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 0.5rem;
+    padding: 0.55rem 1rem;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(12px);
+    border-radius: 100px;
+    z-index: 5;
+}
+
+.pd-dot {
+    width: 14px;
+    height: 4px;
+    padding: 0;
+    border: none;
+    border-radius: 2px;
+    background: rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.pd-dot--active {
+    background: #fff;
+    width: 28px;
+}
+
+/* ── Right Side Details Content Frame (Left-aligned text flow inside column) ── */
+.pd-info-side {
+    flex: 0 0 50%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.pd-info-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.6rem;
+    max-width: 540px;
+    /* Room for grand scale typography reads */
+    width: 100%;
+}
+
+/* Header categorizers row badges layout */
+.pd-badge-row {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+    flex-wrap: wrap;
+}
+
+.pd-category {
+    font-size: 0.88rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #3d6b2f;
+}
+
+.pd-tag {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 0.28rem 0.9rem;
+    border-radius: 100px;
+}
+
+.pd-tag--green {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.pd-tag--blue {
+    background: #dbeafe;
+    color: #1e40af;
+}
+
+.pd-tag--amber {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+/* Premium Title Text Display (Upscaled Sizing) */
+.pd-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 4.2rem;
+    /* Significantly larger premium typography footprint */
+    font-weight: 400;
+    line-height: 1.1;
+    color: #0c1007;
+    margin: 0;
+    word-break: break-word;
+}
+
+/* Catalog identifiers typography metrics */
+.pd-code {
+    font-size: 1.1rem;
+    color: #6b7568;
+    margin: 0;
+}
+
+.pd-code strong {
+    color: #3d4a39;
+    font-weight: 600;
+}
+
+/* Border line accents spacer style */
+.pd-divider {
+    width: 72px;
+    height: 3px;
+    background: #3d6b2f;
+    border-radius: 2px;
+    margin: 0.2rem 0;
+}
+
+/* Action button element footprint measurements */
+.pd-enquire-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.85rem;
+    padding: 1.25rem 3.2rem;
+    /* Expanded button canvas sizing */
+    background: #3d6b2f;
+    color: #fff;
+    border-radius: 100px;
+    font-size: 1.15rem;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 10px 25px rgba(61, 107, 47, 0.2);
+    transition: all 0.2s ease;
+    margin-top: 0.5rem;
+}
+
+.pd-enquire-btn:hover {
+    background: #2b4f21;
+    transform: translateY(-2px);
+    box-shadow: 0 14px 35px rgba(61, 107, 47, 0.3);
+}
+
+.pd-enquire-btn:active {
+    transform: translateY(0);
+}
+
+/* ── Responsive adjustments for tablet / smaller desktop layouts ── */
+@media (max-width: 1024px) {
+    .pd-root {
+        padding: 5.5rem 2.5rem 3rem;
+    }
+
+    .pd-split-container {
+        gap: 3rem;
+    }
+
+    .pd-title {
+        font-size: 3.2rem;
+    }
+
+    .pd-image-side {
+        height: 500px;
+    }
+}
+
+/* ── Responsive adjustments for handheld / mobile layouts ── */
+@media (max-width: 840px) {
+    .pd-root {
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+        /* extra top padding clears the fixed/sticky navbar */
+        padding: calc(70px + 1.25rem) 1.25rem 3rem;
+        min-height: auto;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+
+    .pd-back-btn {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin-bottom: 1.25rem;
+        align-self: flex-start;
+        padding: 0.55rem 1.1rem;
+        font-size: 0.82rem;
+        z-index: 1;
+    }
+
+    .pd-split-container {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 100%;
+        gap: 2rem;
+        box-sizing: border-box;
+    }
+
+    .pd-image-side {
+        width: 100%;
+        max-width: 100%;
+        flex: none;
+        height: 50vh;
+        min-height: 280px;
+        border-radius: 16px;
+        box-sizing: border-box;
+    }
+
+    .pd-info-side {
+        width: 100%;
+        max-width: 100%;
+        flex: none;
+    }
+
+    .pd-info-content {
+        max-width: 100%;
+        width: 100%;
+        gap: 1.1rem;
+        box-sizing: border-box;
+    }
+
+    .pd-title {
+        font-size: 2.2rem;
+    }
+
+    .pd-code {
+        font-size: 1rem;
+    }
+
+    .pd-enquire-btn {
+        width: 100%;
+        max-width: 100%;
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+        box-sizing: border-box;
+    }
+
+    .pd-arrow {
+        width: 42px;
+        height: 42px;
+    }
+
+    .pd-arrow--left {
+        left: 0.75rem;
+    }
+
+    .pd-arrow--right {
+        right: 0.75rem;
+    }
+}
+
+/* ── Extra small phones ── */
+@media (max-width: 400px) {
+    .pd-root {
+        padding: 1rem 1rem 2.5rem;
+    }
+
+    .pd-title {
+        font-size: 1.75rem;
+    }
+
+    .pd-back-btn {
+        font-size: 0.78rem;
+        padding: 0.5rem 0.95rem;
+    }
+
+    .pd-image-side {
+        height: 42vh;
+        min-height: 230px;
+    }
+}

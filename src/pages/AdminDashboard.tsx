@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import './AdminDashboard.css'
 
 const STORAGE_KEY = import.meta.env.VITE_STORAGE_KEY as string;
 
@@ -244,6 +245,6 @@ export default function AdminDashboard() {
     );
 }
 
-// Inline Utility Object style setups definitions helper definitions
+
 const labelStyle = { display: "block", marginTop: "12px", fontSize: "0.85rem", fontWeight: "bold", color: "#5a4f3e" };
 const inputStyle = { width: "100%", padding: "8px", marginTop: "4px", border: "1px solid #e8dcc8", borderRadius: "4px", boxSizing: "border-box" as const, fontFamily: "inherit" };

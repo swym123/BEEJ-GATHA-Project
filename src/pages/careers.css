@@ -1,0 +1,221 @@
+.careers-page {
+    font-family: 'DM Sans', sans-serif;
+    color: #0d1208;
+    background: #fdfcf9;
+}
+
+.careers-hero {
+    position: relative;
+    background: linear-gradient(160deg, #0d1208 0%, #1a2a14 100%);
+    color: #f5f0e8;
+    padding: 10rem 1.5rem 6rem;
+    text-align: center;
+}
+
+.careers-eyebrow {
+    font-size: .75rem;
+    letter-spacing: .4em;
+    text-transform: uppercase;
+    color: #8cc63f;
+    margin: 0 0 1rem;
+}
+
+.careers-hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    margin: 0 0 1rem;
+    line-height: 1.1;
+    color: #f5f0e8;
+}
+
+.careers-sub {
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    color: rgba(245, 240, 232, 0.7);
+    max-width: 650px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.careers-why-sec {
+    padding: 5rem 1.5rem;
+    background: #fff;
+}
+
+.careers-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+@media (max-width: 768px) {
+    .why-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
+
+.why-card {
+    text-align: center;
+    padding: 2rem 1.5rem;
+    border: 1px solid #e8dcc8;
+    border-radius: 4px;
+    background: #fdfcf9;
+}
+
+.why-icon {
+    font-size: 2.2rem;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.why-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    margin: 0 0 0.8rem;
+    color: #0d1208;
+}
+
+.why-card p {
+    font-size: 0.9rem;
+    line-height: 1.7;
+    color: #5a4f3e;
+    margin: 0;
+}
+
+.openings-sec {
+    padding: 6rem 1.5rem;
+    border-top: 1px solid #e8dcc8;
+}
+
+.openings-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    text-align: center;
+    margin: 0 0 3.5rem;
+    color: #0d1208;
+}
+
+.jobs-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.job-card {
+    background: #fff;
+    border: 1px solid #e8dcc8;
+    border-radius: 6px;
+    padding: 2.5rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.01);
+    transition: border-color 0.3s, transform 0.3s;
+}
+
+.job-card:hover {
+    border-color: #8cc63f;
+    transform: translateY(-2px);
+}
+
+.job-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-bottom: 1.2rem;
+}
+
+.job-meta span {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 0.25rem 0.6rem;
+    border-radius: 4px;
+}
+
+.job-dept {
+    background: rgba(61, 107, 47, 0.1);
+    color: #3d6b2f;
+}
+
+.job-loc {
+    background: rgba(140, 198, 63, 0.15);
+    color: #3d6b2f;
+}
+
+.job-type {
+    background: rgba(13, 18, 8, 0.05);
+    color: #0d1208;
+}
+
+.job-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    margin: 0 0 0.8rem;
+    color: #0d1208;
+}
+
+.job-card p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: #5a4f3e;
+    margin: 0 1.5rem 1.5rem 0;
+}
+
+.job-apply {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #3d6b2f;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    transition: color 0.2s;
+}
+
+.job-apply:hover {
+    color: #8cc63f;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+}
+
+.contact-sec {
+    padding: 4rem 1.5rem;
+    background: #fdfcf9;
+    text-align: center;
+}
+
+.contact-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: #0d1208;
+    margin-bottom: 1rem;
+}
+
+.contact-email a {
+    color: #3d6b2f;
+    text-decoration: underline;
+}
+
+.contact-phone {
+    font-size: 1rem;
+    color: #5a4f3e;
+    margin: 0.2rem 0;
+}

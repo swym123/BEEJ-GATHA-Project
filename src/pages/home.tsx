@@ -2,7 +2,6 @@ import { useEffect } from "react";
 
 import ScrollVideoSection from "../components/ScrollVideoSection";
 import Loader from "../components/Loader";
-
 import YoutubeSection from "../components/YoutubeSection";
 import SeedCompanySection from "../components/SeedCompanySection";
 import ScientistsSection from "../components/ScientistsSection";
